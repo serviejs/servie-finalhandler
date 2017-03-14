@@ -20,8 +20,9 @@ npm install servie-finalhandler --save
 import { finalhandler } from 'servie-finalhandler'
 
 const app = compose([get(...), post(...)])
+const req = new Request({ url: '/' })
 
-app(new Request({ url: '/' }), finalhandler)
+app(req, finalhandler(req))
 ```
 
 ## TypeScript

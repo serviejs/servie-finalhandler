@@ -1,6 +1,6 @@
 {
   "name": "servie-finalhandler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Servie final HTTP responder",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

@@ -1,10 +1,10 @@
 # Servie Finalhandler
 
-[![NPM version][npm-image]][npm-url]
-[![NPM downloads][downloads-image]][downloads-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/node-servie-finalhandler.svg)](https://greenkeeper.io/)
+[![NPM version](https://img.shields.io/npm/v/servie-finalhandler.svg?style=flat)](https://npmjs.org/package/servie-finalhandler)
+[![NPM downloads](https://img.shields.io/npm/dm/servie-finalhandler.svg?style=flat)](https://npmjs.org/package/servie-finalhandler)
+[![Build status](https://img.shields.io/travis/serviejs/servie-finalhandler.svg?style=flat)](https://travis-ci.org/serviejs/servie-finalhandler)
+[![Test coverage](https://img.shields.io/coveralls/serviejs/servie-finalhandler.svg?style=flat)](https://coveralls.io/r/serviejs/servie-finalhandler?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/serviejs/servie-finalhandler.svg)](https://greenkeeper.io/)
 
 > Servie final HTTP 404 responder.
 
@@ -31,13 +31,4 @@ This project is written using [TypeScript](https://github.com/Microsoft/TypeScri
 
 ## License
 
-MIT
-
-[npm-image]: https://img.shields.io/npm/v/servie-finalhandler.svg?style=flat
-[npm-url]: https://npmjs.org/package/servie-finalhandler
-[downloads-image]: https://img.shields.io/npm/dm/servie-finalhandler.svg?style=flat
-[downloads-url]: https://npmjs.org/package/servie-finalhandler
-[travis-image]: https://img.shields.io/travis/blakeembrey/node-servie-finalhandler.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/node-servie-finalhandler
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/node-servie-finalhandler.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/node-servie-finalhandler?branch=master
+Apache 2.0

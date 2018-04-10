@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json",
     "build": "rimraf dist && tsc",
     "specs": "jest --coverage",
     "test": "npm run -s lint && npm run -s build && npm run -s specs",
@@ -38,9 +38,9 @@
   "jest": {
     "testEnvironment": "node",
     "transform": {
-      ".(ts|tsx)": "ts-jest/preprocessor.js"
+      ".tsx?": "ts-jest"
     },
-    "testRegex": "src/.*\\.(?:test|spec)\\.(ts|tsx|js)$",
+    "testRegex": "src/.*\\.(?:test|spec)\\.(tsx?|jsx?)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -48,16 +48,18 @@
     ]
   },
   "devDependencies": {
-    "jest": "^19.0.0",
+    "@types/jest": "^22.2.2",
+    "@types/node": "^6.0.105",
+    "jest": "^22.4.3",
     "rimraf": "^2.5.4",
-    "servie": "^0.2.0",
-    "ts-jest": "^19.0.0",
-    "tslint": "^5.0.0",
-    "tslint-config-standard": "^5.0.0",
-    "typescript": "^2.2.1",
+    "servie": "^2.1.0",
+    "ts-jest": "^22.4.2",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.8.1",
     "typings": "^2.1.0"
   },
   "peerDependencies": {
-    "servie": "^0.2.0"
+    "servie": "^2.1.0"
   }
 }

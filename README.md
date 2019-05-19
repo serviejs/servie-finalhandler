@@ -4,7 +4,6 @@
 [![NPM downloads](https://img.shields.io/npm/dm/servie-finalhandler.svg?style=flat)](https://npmjs.org/package/servie-finalhandler)
 [![Build status](https://img.shields.io/travis/serviejs/servie-finalhandler.svg?style=flat)](https://travis-ci.org/serviejs/servie-finalhandler)
 [![Test coverage](https://img.shields.io/coveralls/serviejs/servie-finalhandler.svg?style=flat)](https://coveralls.io/r/serviejs/servie-finalhandler?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/serviejs/servie-finalhandler.svg)](https://greenkeeper.io/)
 
 > Servie final HTTP 404 responder.
 
@@ -17,12 +16,12 @@ npm install servie-finalhandler --save
 ## Usage
 
 ```ts
-import { finalhandler } from 'servie-finalhandler'
+import { finalhandler } from "servie-finalhandler";
 
-const app = compose([get(...), post(...)])
-const req = new Request({ url: '/' })
+const app = compose([get(), post()]);
+const req = new Request("/");
 
-app(req, finalhandler(req))
+app(req, finalhandler(req));
 ```
 
 ## TypeScript

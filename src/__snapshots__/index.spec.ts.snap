@@ -1,44 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`servie-finalhandler should not return a body when using HEAD 1`] = `
-Object {
-  "body": Object {
-    "bodyUsed": false,
-    "buffered": true,
-    "hasBody": false,
-    "headers": Object {},
+Response {
+  "$rawBody": null,
+  "headers": Headers {
+    "object": Object {
+      "content-security-policy": "default-src 'self'",
+      "x-content-type-options": "nosniff",
+    },
   },
-  "bytesTransferred": 0,
-  "finished": false,
-  "headers": Object {
-    "content-security-policy": "default-src 'self'",
-    "x-content-type-options": "nosniff",
-  },
-  "started": false,
-  "statusCode": 404,
-  "statusMessage": undefined,
+  "status": 404,
+  "statusText": "",
+  "trailer": Promise {},
 }
 `;
 
 exports[`servie-finalhandler should return a 404 response 1`] = `
-Object {
-  "body": Object {
-    "bodyUsed": false,
-    "buffered": true,
-    "hasBody": true,
-    "headers": Object {
+Response {
+  "$rawBody": "Cannot GET /",
+  "headers": Headers {
+    "object": Object {
       "content-length": "12",
+      "content-security-policy": "default-src 'self'",
       "content-type": "text/plain",
+      "x-content-type-options": "nosniff",
     },
   },
-  "bytesTransferred": 0,
-  "finished": false,
-  "headers": Object {
-    "content-security-policy": "default-src 'self'",
-    "x-content-type-options": "nosniff",
-  },
-  "started": false,
-  "statusCode": 404,
-  "statusMessage": undefined,
+  "status": 404,
+  "statusText": "",
+  "trailer": Promise {},
 }
 `;
